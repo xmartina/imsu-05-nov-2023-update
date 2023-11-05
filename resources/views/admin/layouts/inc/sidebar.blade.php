@@ -17,6 +17,13 @@
             </a>
             <ul class="pcoded-submenu">
                 @canany(['application-create', 'application-view'])
+                    <li class="{{ Request::is('admin/admission/application*') ? 'active' : '' }}"><a href="{{ route('admin.course-form-pin.create') }}" class="">
+{{--                            {{ trans_choice('module_application', 2) }}--}}
+                            Create Course Pin
+                        </a></li>
+                @endcanany
+
+                @canany(['application-create', 'application-view'])
                 <li class="{{ Request::is('admin/admission/application*') ? 'active' : '' }}"><a href="{{ route('admin.application.index') }}" class="">{{ trans_choice('module_application', 2) }}</a></li>
                 @endcanany
 

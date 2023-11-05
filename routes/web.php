@@ -11,6 +11,11 @@
 |
 */
 
+//New for Routes
+// routes/web.php
+Route::get('/admin/course-form-pin', 'PinController@createForm')->name('admin.course-form-pin.create');
+Route::post('/admin/course-form-pin/generate', 'PinController@generatePins')->name('admin.course-form-pin.generate');
+
 // Web Routes
 Route::middleware(['XSS'])->namespace('Web')->group(function () {
 
@@ -70,7 +75,7 @@ Route::get('locale/language/{locale}', function ($locale){
     \App::setLocale($locale);
 
     return redirect()->back();
-    
+
 })->name('version');
 
 
@@ -179,7 +184,7 @@ Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->pref
     Route::post('download/assignment-marking', 'AssignmentController@marking')->name('assignment.marking');
 
     // Content Routes
-    Route::resource('download/content', 'ContentController');    
+    Route::resource('download/content', 'ContentController');
     Route::resource('download/content-type', 'ContentTypeController');
 
 
@@ -206,7 +211,7 @@ Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->pref
     Route::resource('fees-receipt', 'ReceiptSettingController');
 
 
-    
+
     // Human Resource Routes
     Route::resource('staff/designation', 'DesignationController');
     Route::resource('staff/department', 'DepartmentController');
@@ -367,7 +372,7 @@ Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->pref
     Route::get('transcript/certificate-print/{id}', 'CertificateController@print')->name('certificate.print');
     Route::get('transcript/certificate-download/{id}', 'CertificateController@download')->name('certificate.download');
     Route::resource('transcript/certificate-template', 'CertificateTemplateController');
-    
+
 
 
     // Report Routes
@@ -382,7 +387,7 @@ Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->pref
     Route::get('report/hostel', 'ReportController@hostel')->name('report.hostel');
     Route::get('report/transport', 'ReportController@transport')->name('report.transport');
 
-    
+
 
     // Setting Routes
     Route::get('setting', 'SettingController@index')->name('setting.index');
@@ -460,9 +465,9 @@ Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->pref
 
 // Student Login Routes
 Route::prefix('student')->name('student.')->namespace('Student')->group(function(){
-    
+
     Route::namespace('Auth')->group(function(){
-            
+
         // Login Routes
         Route::get('/login','LoginController@showLoginForm')->name('login');
         Route::post('/login','LoginController@login')->name('login.store');
