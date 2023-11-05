@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&amp;family=Varela+Round&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Tilt+Neon&amp;family=Varela+Round&amp;display=swap');
+html {
+    scroll-behavior: smooth;
+}
+.p_sticky{
+    position: sticky;
+    top:72px;
+}
+.about-us-wrapper{
+    background-color: #f3f4f5;
+    border-radius: 12px;
+    padding: 67px;
+}
+.about-us-sub-title{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.about-us-title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #0d111b;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 34px;
+}
+.about-us-content{
+    font-size: 19px;
+    font-family: 'Varela Round', sans-serif;
+    color: #283d41;
+    line-height: 2;
+}
+/*Profile Styling*/
+.border-right-bg{
+    border-right: 2px solid #9c9d9f;
+}
+.profile-wrapper{
+    padding: 13px;
+}
+.photo-div{
+    display: flex;
+    justify-content: center;
+}
+.photo-div img{
+    margin-top: 35px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top center;
+}
+.person-name{
+    text-align:center ;
+    color: #202C45;
+    margin-top:13px;
+    padding: 12px 3px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+}
+.person-name .person-title{
+    color: #00A0D1;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top:4px;
+}
+hr.person-hr{
+    width: 70%;
+    height:1px;
+    margin: 10px auto;
+}
+.person-name .person-position{
+    color: #00A0D1;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top:4px;
+}
+.profile-content-wrapper{
+    background-color: #fbfbfd;
+    padding: 16px;
+    padding-bottom: 24px;
+    border-radius: 6px;
+}
+.profile-title{
+    margin-top: 24px;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #00A0D1;
+}
+.profile-sub-title{
+    margin: 6px 4px;
+    font-family: 'Tilt Neon', sans-serif;
+}
+.profile-sub-title span{
+    color: #00A0D1;
+    font-weight: 600;
+    font-family: 'Tilt Neon', sans-serif;
+}
+.profile-content p{
+    margin-top: 24px;
+    font-size: 17px;
+    font-family: 'Tilt Neon', sans-serif;
+    line-height: 1.7;
+    color: #747575;
+}
+.profile-content .title{
+    margin-top: 24px;
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'Tilt Neon', sans-serif;
+    text-transform: capitalize;
+    color: #00A0D1;
+}
+.person-position span{
+  color: #000;
+}
+/*Start New Block*/
+.profile-header{
+    margin-top: 32px;
+}
+.info-box-wrapper{
+    margin-top: 67px;
+}
+.person-designation{
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D47A1;
+}
+.person-designation span{
+    font-weight: 600;
+}
+.person-department{
+    font-size: 19px;
+    font-weight: 400;
+    color: #031126;
+}
+.person-department span{
+    font-weight: 600;
+}
+.person-user-name{
+    margin-top: 23px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #0D47A1;
+}
+.person-user-name span{
+    font-weight: 600;
+}
+.award-titles{
+    font-size: 16px;
+    font-weight: 400;
+    color: #010a17;
+}
+.award-titles span{
+    font-weight: 600;
+}
+.info-box-wrapper .person-contact-info{
+    margin-top: 21px;
+    font-size: 17px;
+}
+.info-box-wrapper .person-email{
+    font-weight: 600;
+}
+.info-box-wrapper .person-email span{
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    color: #0D47A1;
+}
+.profile-main{
+    margin-top: 92px;
+}
+.profile-nav-list{
+    padding: 5px;
+    color: #0d111b;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 23px 0;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+.profile-nav-list.active{
+    color: #F26838;
+    border-top: 4px solid #F26838;
+}
+html a.profile-nav-list:hover{
+    color: #F26838;
+}
+@media (max-width: 768px) {
+    .profile-nav-list{
+        margin: 3px 0;
+    }
+    .p_sticky.mobile-no-sticky{
+        position: static;
+    }
+}
+.profile-navigation-output-wrapper-1{
+    background-color: #e9eaea;
+}
+.content-box.vc{
+    margin-top: 19px;
+    padding: 21px 34px;
+    color: #0D47A1;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 17px;
+}
+.content-box.vc .title{
+    font-size: 28px;
+    font-weight: 600 ;
+}
+.content-box.vc .title.sub, .experience .title.sub{
+    font-size: 27px;
+    font-weight: 600 ;
+    margin: 13px 0;
+}
+.paragraph-v{
+    margin: 16px 0;
+}
+.profile-navigation-wrapper{
+    background-color: #fff;
+    border-bottom: 2px solid #939494;
+}
+.content-box.vc ul li, .experience ul li{
+    line-height: 2.3;
+    list-style-type: disc;
+}
+.research-publication{
+    margin-top: 45px;
+}
+.research-publication .title{
+    font-size: 38px;
+    font-weight: 600 ;
+    color: #00A0D1;
+    font-family: 'Varela Round', sans-serif;
+}
+.research-publication-data-wrapper.first{
+    margin-top: 29px;
+}
+.drop-icon-research{
+    position: absolute;
+    z-index: -4;
+}
+.accordion-header{
+    font-size: 23px;
+    cursor: pointer;
+}
+.accordion-header span{
+    font-size: 45px;
+    color: #0D47A1;
+    margin-left: 39px;
+}
+.dropped-info{
+    padding: 24px;
+    padding-top: 13px;
+}
+.dropped-info-wrapper{
+    margin-top: 23px;
+}
+.dropped-info .dropped-title{
+    font-weight: 600;
+}
+.profile-main .experience, .profile-main .in-the-media{
+    margin-top: 35px;
+    padding-top: 35px;
+    background-color: #e9eaea;
+    padding-bottom: 32px;
+}
+.profile-main .in-the-media{
+    background-color: #fff;
+}
+.experience .title, .in-the-media .title{
+    font-size: 38px;
+    font-weight: 600 ;
+    color: #0d111b;
+    font-family: 'Varela Round', sans-serif;
+}
+.in-the-media .title{
+    color: #00A0D1;
+}
+.experience .title{
+    color:#0D47A1 ;
+}
+.contact-me-block{
+    margin: 34px 0;
+    margin-top:54px;
+}
+.contact-me-block-wrapper{
+    padding: 23px;
+    border: 1px solid #7a7e8a;
+    border-radius: 10px;
+}
+.contact-me-block .img-box{
+    display: flex;
+    justify-content: center;
+}
+.contact-me-block .img-box img{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+.contact-me-block .title{
+    font-weight: 600;
+    font-size: 21px;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 5px;
+}
+.contact-me-block .email{
+    color: #00A0D1;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 12px;
+}
+.connect-social{
+    font-size: 21px;
+    font-weight: 600;
+}
+.connect-social .icon:hover{
+    color: #00A0D1;
+    transition: all 450ms linear;
+    cursor: pointer;
+}
+.col-lg-3.custom-font .profile-nav-list{
+    font-size: 18px;
+}
+.icon.linkedIn{
+    color: #0f3e68;
+}
+.icon.fb{
+    color: #0D47A1;
+}
+.icon.twiter{
+    color: #00A0D1;
+}

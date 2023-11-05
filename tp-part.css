@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.bg-light-blue{
+    background-color: #c5d9f6!important;
+}
+.text-light-blue{
+    color: #c5d9f6!important;
+}
+.bg-dark-blue{
+    background-color: #0a58ca!important;
+}
+.text-dark-blue{
+    color: #0a58ca!important;
+}
+.form-bd{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /*background: url('https://cdn.dribbble.com/users/2328616/screenshots/14360937/media/f14fc67ce0e14b86b6f741a694034906.png?resize=768x576&vertical=center') center;*/
+    position: absolute;
+    /*filter: blur(10px);*/
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.form-sub{
+    max-width: 600px;
+}
+@media (max-width: 769px) {
+    .form-sub{
+        max-width: 600px;
+    }
+}
+.font-11{
+    font-size:12px ;
+}
+.font-21{
+    font-size: 21px;
+}
+.form-icon-wr{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+.cours-form-input{
+    font-size: 15px;
+}
+.cours-form-input span{
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+}
+
+input.course-form {
+    border: 2px solid #a1c3f6; /* Initial border color and width */
+    border-radius: 9px!important; /* Initial border radius */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #e5eefd;
+}
+input.course-form:hover {
+    border-color: #007bff; /* Border color on hover */
+    transition: all 340ms linear;
+}
+input.course-form:focus {
+    border-color: #28a745; /* Border color on click/focus */
+    transition: all 500ms ease-in-out;
+}
+.form-mn button{
+    border: none;
+}
+.form-mn button:hover{
+    background-color: #0a0a0a!important;
+    transition: all 430ms linear;
+}
+.fm-content-wr .col-5:hover{
+    cursor: pointer;
+    color: #0a58ca;
+    transition: all 340ms ease-in-out;
+}
