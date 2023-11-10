@@ -13,8 +13,13 @@
 
 //New for Routes
 // routes/web.php
-Route::get('/admin/course-form-pin', 'PinController@createForm')->name('admin.course-form-pin.create');
-Route::post('/admin/course-form-pin/generate', 'PinController@generatePins')->name('admin.course-form-pin.generate');
+// routes/web.php
+
+use App\Http\Controllers\PinController;
+
+Route::get('/admin/course-form-pin/create', [PinController::class, 'create'])->name('pins.create');
+Route::post('/admin/course-form-pin/store', [PinController::class, 'store'])->name('pins.store');
+
 
 // Web Routes
 Route::middleware(['XSS'])->namespace('Web')->group(function () {

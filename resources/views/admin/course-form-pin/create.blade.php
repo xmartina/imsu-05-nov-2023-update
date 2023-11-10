@@ -1,34 +1,18 @@
-<form method="POST" action="{{ route('admin.course-form-pin.generate') }}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course Form Pins</title>
+</head>
+<body>
+<h1>Create Course Form Pins</h1>
+
+<form action="{{ route('pins.store') }}" method="POST">
     @csrf
-    <label for="num_to_generate">Number of Pins to Generate:</label>
-    <input type="number" name="num_to_generate" id="num_to_generate">
-    <button type="submit">Generate</button>
+    <label for="pin_count">Number of Pins to Generate:</label>
+    <input type="number" name="pin_count" id="pin_count" min="1" max="25" required>
+    <button type="submit">Generate Pins</button>
 </form>
-
-@if(isset($pins))
-    <h3>Generated Pins:</h3>
-    <ul>
-        @foreach($pins as $pin)
-            <li>{{ $pin }}</li>
-        @endforeach
-    </ul>
-@endif
-
-<script>
-    function generatePins() {
-        const numToGenerate = document.getElementById('num_to_generate').value;
-        const generatedPinsList = document.getElementById('generated-pins-list');
-
-        while (generatedPinsList.firstChild) {
-            generatedPinsList.removeChild(generatedPinsList.firstChild);
-        }
-
-        for (let i = 0; i < numToGenerate; i++) {
-            // Use your method to generate alphanumeric pins here
-            const pin = generateAlphanumeric(29); // Implement this function
-            const listItem = document.createElement('li');
-            listItem.textContent = pin;
-            generatedPinsList.appendChild(listItem);
-        }
-    }
-</script>
+</body>
+</html>
